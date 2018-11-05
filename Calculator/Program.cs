@@ -38,18 +38,29 @@ namespace Calculator
                     cal.FirstNumber = double.Parse(Console.ReadLine());
                     cal.SecondNumber = double.Parse(Console.ReadLine());
                     Console.WriteLine("The product of the numbers is: " + cal.MultipleNumbers());
+                    WriteMenu();
                     break;
                 case "3":
                     Console.WriteLine("Enter two numbers!");
                     cal.FirstNumber = double.Parse(Console.ReadLine());
                     cal.SecondNumber = double.Parse(Console.ReadLine());
                     Console.WriteLine("Sum in between is: " + cal.SumInBetween());
+                    WriteMenu();
                     break;
                 case "4":
+                    Console.WriteLine("Enter a number to save to memory!");
+                    cal.NumberInMemory = double.Parse(Console.ReadLine());
+                    Console.WriteLine("Number added to memory!");
+                    WriteMenu();
                     break;
                 case "5":
+                    cal = new Cal();
+                    Console.WriteLine("Memory cleared!");
+                    WriteMenu();
                     break;
                 case "6":
+                    Console.WriteLine("Number in memory is: " + cal.NumberInMemory);
+                    WriteMenu();
                     break;
                 case "7":
                     System.Environment.Exit(1);
