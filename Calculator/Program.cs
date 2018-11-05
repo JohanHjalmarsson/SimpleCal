@@ -47,7 +47,6 @@ namespace Calculator
             }
         }
 
-        public 
 
         public static void WriteMenu()
         {
