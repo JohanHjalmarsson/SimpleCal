@@ -39,7 +39,7 @@ namespace Calculator
                 case "6":
                     break;
                 case "7":
-                    
+                    System.Environment.Exit(1);
                     break;
                 default:
 
