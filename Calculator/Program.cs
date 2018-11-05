@@ -27,10 +27,23 @@ namespace Calculator
             switch (userInput) 
             {
                 case "1":
+                    Console.WriteLine("Enter two numbers to add!");
+                    cal.FirstNumber = double.Parse(Console.ReadLine());
+                    cal.SecondNumber = double.Parse(Console.ReadLine());
+                    Console.WriteLine("The sum is: " + cal.SumNumbers());
+                    WriteMenu();
                     break;
                 case "2":
+                    Console.WriteLine("Enter two numbers to multiply!");
+                    cal.FirstNumber = double.Parse(Console.ReadLine());
+                    cal.SecondNumber = double.Parse(Console.ReadLine());
+                    Console.WriteLine("The product of the numbers is: " + cal.MultipleNumbers());
                     break;
                 case "3":
+                    Console.WriteLine("Enter two numbers!");
+                    cal.FirstNumber = double.Parse(Console.ReadLine());
+                    cal.SecondNumber = double.Parse(Console.ReadLine());
+                    Console.WriteLine("Sum in between is: " + cal.SumInBetween());
                     break;
                 case "4":
                     break;
