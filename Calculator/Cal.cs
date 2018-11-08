@@ -9,8 +9,8 @@ namespace Calculator
 
         public Cal()
         {
-            FirstNumber = 1;
-            SecondNumber = 5;
+            FirstNumber = 0;
+            SecondNumber = 0;
             NumberInMemory = 0;
         }
 
@@ -33,6 +33,12 @@ namespace Calculator
             }
 
             return result;
+        }
+
+        public void SetFirstAndSecond(double first, double second)
+        {
+            FirstNumber = first;
+            SecondNumber = second;
         }
 
         public override string ToString()
